@@ -27,8 +27,6 @@ Phaser - v2.0.3 "Allorallen" - Built: Thu Apr 10 2014 01:53:26
  - ----------------------------------------------------------
 
 
-
-
 …or create a new repository on the command line
 git init
 git add README.md
