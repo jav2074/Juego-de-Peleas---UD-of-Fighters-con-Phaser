@@ -8,6 +8,8 @@ var barraYplayer1 = 100;
 var barraXplayer2 = 100;
 var barraYplayer2 = 100;
 
+var player1_velocity = 160;		// 240
+var player2_velocity = 160;		// 240
 
 var GameState = {
 
@@ -41,7 +43,7 @@ var GameState = {
 		me.game.add.image(0, 0, 'mapa');
 
 		//CONFIGURACION JUGADOR 1
-		me.player1 = me.game.add.sprite(w05 - 150, h05 + 120, 'raiden');
+		me.player1 = me.game.add.sprite(w05-(w05/2), h05+(h05/3), 'raiden');
 		me.player1.scale.setTo(1, 1);
 		//SECUENCIA CUANDO NO SE MUEVE
 		// me.player1.animations.add('inicio', [47, 48, 49, 50, 51, 52, 53, 54, 55, 56], 8, true);
@@ -74,7 +76,7 @@ var GameState = {
 		me.player1.body.collideWorldBounds = true;
 
 		//CONFIGURACION JUGADOR 2
-		me.player2 = me.game.add.sprite(w05 + 150, h05 + 120, 'sonya');
+		me.player2 = me.game.add.sprite(w05+(w05/2), h05+(h05/3), 'sonya');
 		me.player2.scale.setTo(-1, 1);
 		//SECUENCIA CUANDO NO SE MUEVE
 		me.player2.animations.add('inicio', [01, 02, 03, 04, 05, 06], 8, true);
@@ -166,43 +168,43 @@ var GameState = {
 		barraYplayer2 = 100;
 
 		me.myHealthBarXPlayer1 = new HealthBar(me.game,
-			{ width: 450, height: 40, x: w05 - 30, y: 80, bg: { color: '#101010' }, bar: { color: '#132FD3' }, flipped: true });
+			{ width: 450, height: 40, x: w05-30, y: 80, bg: { color: '#101010' }, bar: { color: '#132FD3' }, flipped: true });
 		//Etiquetas
-		me.textPlayer1 = me.game.add.text(w05 - 40, 40, "Rayden", { font: "32px ARIAL", fill: "#ffffff", align: "left" });
+		me.textPlayer1 = me.game.add.text(w05-40, 40, "Rayden", { font: "32px ARIAL", fill: "#ffffff", align: "left" });
 		me.textPlayer1.anchor.setTo(1, 0);
 		// me.textPlayer1.fixedToCamera = true;
-		me.game.add.text(w05 - 470, 110, "Energy", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(0, 1);
-		me.textBarraXplayer1 = me.game.add.text(w05 - 40, 110, "barraXplayer1 ", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
+		me.game.add.text(w05-470, 110, "Energy", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(0, 1);
+		me.textBarraXplayer1 = me.game.add.text(w05-40, 110, "barraXplayer1 ", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
 		me.textBarraXplayer1.text = barraXplayer1 + '%';
 		me.textBarraXplayer1.anchor.setTo(1, 1);
 		// me.textBarraXplayer1.fixedToCamera = true;
 
 		me.myHealthBarYPlayer1 = new HealthBar(me.game,
-			{ width: 450, height: 40, x: w05 - 30, y: 130, bg: { color: '#101010' }, bar: { color: '#84A5E7' }, flipped: true });
+			{ width: 450, height: 40, x: w05-30, y: 130, bg: { color: '#101010' }, bar: { color: '#84A5E7' }, flipped: true });
 		//Etiquetas
-		me.game.add.text(w05 - 470, 160, "Live", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(0, 1);
-		me.textBarraYplayer1 = me.game.add.text(w05 - 40, 160, "barraYplayer1", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
+		me.game.add.text(w05-470, 160, "Live", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(0, 1);
+		me.textBarraYplayer1 = me.game.add.text(w05-40, 160, "barraYplayer1", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
 		me.textBarraYplayer1.text = barraYplayer1 + '%';
 		me.textBarraYplayer1.anchor.setTo(1, 1);
 		// me.textBarraYplayer1.fixedToCamera = true;
 
 		me.myHealthBarXPlayer2 = new HealthBar(me.game,
-			{ width: 450, height: 40, x: w05 + 30, y: 80, bg: { color: '#101010' }, bar: { color: '#3EAA00' }, flipped: false });
+			{ width: 450, height: 40, x: w05+30, y: 80, bg: { color: '#101010' }, bar: { color: '#3EAA00' }, flipped: false });
 		//Etiquetas
-		me.textPlayer2 = me.game.add.text(w05 + 40, 40, "Sonya", { font: "32px ARIAL", fill: "#ffffff", align: "left" });
+		me.textPlayer2 = me.game.add.text(w05+40, 40, "Sonya", { font: "32px ARIAL", fill: "#ffffff", align: "left" });
 		me.textPlayer2.anchor.setTo(0, 0);
 		// me.textPlayer2.fixedToCamera = true;
-		me.game.add.text(w05 + 470, 110, "Energy", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(1, 1);
-		me.textBarraXplayer2 = me.game.add.text(w05 + 40, 110, "barraXplayer2", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
+		me.game.add.text(w05+470, 110, "Energy", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(1, 1);
+		me.textBarraXplayer2 = me.game.add.text(w05+40, 110, "barraXplayer2", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
 		me.textBarraXplayer2.text = barraXplayer2 + '%';
 		me.textBarraXplayer2.anchor.setTo(0, 1);
 		// me.textBarraXplayer2.fixedToCamera = true;
 
 		me.myHealthBarYPlayer2 = new HealthBar(me.game,
-			{ width: 450, height: 40, x: w05 + 30, y: 130, bg: { color: '#101010' }, bar: { color: '#C8C864' }, flipped: false });
+			{ width: 450, height: 40, x: w05+30, y: 130, bg: { color: '#101010' }, bar: { color: '#C8C864' }, flipped: false });
 		//Etiquetas
-		me.game.add.text(w05 + 470, 160, "Live", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(1, 1);
-		me.textBarraYplayer2 = me.game.add.text(w05 + 40, 160, "barraYplayer2", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
+		me.game.add.text(w05+470, 160, "Live", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(1, 1);
+		me.textBarraYplayer2 = me.game.add.text(w05+40, 160, "barraYplayer2", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
 		me.textBarraYplayer2.text = barraYplayer2 + '%';
 		me.textBarraYplayer2.anchor.setTo(0, 1);
 		// me.textBarraYplayer2.fixedToCamera = true;
@@ -337,7 +339,7 @@ var GameState = {
 			//JUGADOR 2
 			//MOVER IZQUIERDA
 			if (me.player2Izq.isDown) {
-				me.player2.body.velocity.x -= 240;
+				me.player2.body.velocity.x -= player1_velocity;
 				if (!sentido)
 					me.player2.animations.play('caminarAtras');
 				else
@@ -345,7 +347,7 @@ var GameState = {
 			}
 			//MOVER DERECHA
 			else if (me.player2Der.isDown) {
-				me.player2.body.velocity.x += 240;
+				me.player2.body.velocity.x += player1_velocity;
 				if (sentido)
 					me.player2.animations.play('caminarAtras');
 				else
@@ -408,7 +410,7 @@ var GameState = {
 			//JUGADOR 1
 			//MOVER IZQUIERDA
 			if (me.player1Izq.isDown) {
-				me.player1.body.velocity.x -= 240;
+				me.player1.body.velocity.x -= player2_velocity;
 				if (sentido)
 					me.player1.animations.play('caminarAtras');
 				else
@@ -416,7 +418,7 @@ var GameState = {
 			}
 			//MOVER DERECHA
 			else if (me.player1Der.isDown) {
-				me.player1.body.velocity.x += 240;
+				me.player1.body.velocity.x += player2_velocity;
 				if (!sentido)
 					me.player1.animations.play('caminarAtras');
 				else
