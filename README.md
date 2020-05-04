@@ -9,46 +9,28 @@ https://github.com/macaguegi/Juego-de-Peleas---UD-of-Fighters-con-Phaser
 # Phaser - v2.0.3 "Allorallen" - Built: Thu Apr 10 2014 01:53:26
 
 # Juego_de_Peleas
-# Actualizacion: Javier Sibona - 2020/05/02
+Actualizacion: Javier Sibona - 2020/05/02
 
 
-#----------------------------------------------------------
-
-#player1Izq =       Keyboard.A
-
-#player1Der =       Keyboard.D
-
-#player1Arriba =    Keyboard.W
-
-#player1Abajo =     Keyboard.S
-
-#player1Puño =      Keyboard.J
-
-#player1Patada =    Keyboard.K
-
-#player1Defensa =   Keyboard.L
-
-#----------------------------------------------------------
-
-#player2Izq =       teclado.left
-
-#player2Der =       teclado.right
-
-#player2Arriba =    teclado.up
-
-#player2Abajo =     teclado.down
-
-#player2Puño =      Keyboard.B
-
-#player2Patada =    Keyboard.N
-
-#player2Defensa =   Keyboard.M
-
-#----------------------------------------------------------
-
-#reInit =           Keyboard.SPACEBAR
-
-#----------------------------------------------------------
+ - ----------------------------------------------------------
+ - player1Izq =       Keyboard.A
+ - player1Der =       Keyboard.D
+ - player1Arriba =    Keyboard.W
+ - player1Abajo =     Keyboard.S
+ - player1Puño =      Keyboard.J
+ - player1Patada =    Keyboard.K
+ - player1Defensa =   Keyboard.L
+ - ----------------------------------------------------------
+ - player2Izq =       teclado.left
+ - player2Der =       teclado.right
+ - player2Arriba =    teclado.up
+ - player2Abajo =     teclado.down
+ - player2Puño =      Keyboard.B
+ - player2Patada =    Keyboard.N
+ - player2Defensa =   Keyboard.M
+ - ----------------------------------------------------------
+ - reInit =           Keyboard.SPACEBAR
+ - ----------------------------------------------------------
 
 
 
