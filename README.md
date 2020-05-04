@@ -12,25 +12,25 @@ https://github.com/macaguegi/Juego-de-Peleas---UD-of-Fighters-con-Phaser
 # Actualizacion: Javier Sibona - 2020/05/02
 
 
-----------------------------------------------------------
-player1Izq =       Keyboard.A
-player1Der =       Keyboard.D
-player1Arriba =    Keyboard.W
-player1Abajo =     Keyboard.S
-player1Puño =      Keyboard.J
-player1Patada =    Keyboard.K
-player1Defensa =   Keyboard.L
-----------------------------------------------------------
-player2Izq =       teclado.left
-player2Der =       teclado.right
-player2Arriba =    teclado.up
-player2Abajo =     teclado.down
-player2Puño =      Keyboard.B
-player2Patada =    Keyboard.N
-player2Defensa =   Keyboard.M
-----------------------------------------------------------
-reInit =           Keyboard.SPACEBAR
-----------------------------------------------------------
+#----------------------------------------------------------
+#player1Izq =       Keyboard.A
+#player1Der =       Keyboard.D
+#player1Arriba =    Keyboard.W
+#player1Abajo =     Keyboard.S
+#player1Puño =      Keyboard.J
+#player1Patada =    Keyboard.K
+#player1Defensa =   Keyboard.L
+#----------------------------------------------------------
+#player2Izq =       teclado.left
+#player2Der =       teclado.right
+#player2Arriba =    teclado.up
+#player2Abajo =     teclado.down
+#player2Puño =      Keyboard.B
+#player2Patada =    Keyboard.N
+#player2Defensa =   Keyboard.M
+#----------------------------------------------------------
+#reInit =           Keyboard.SPACEBAR
+#----------------------------------------------------------
 
 
 
