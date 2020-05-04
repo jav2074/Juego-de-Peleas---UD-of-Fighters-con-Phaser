@@ -7,7 +7,7 @@ CODIGO ORIGINAL - https://github.com/macaguegi/Juego-de-Peleas---UD-of-Fighters-
 Phaser - v2.0.3 "Allorallen" - Built: Thu Apr 10 2014 01:53:26
 
  - ----------------------------------------------------------
-# Juego_de_Peleas - Actualizacion: Javier Sibona - 2020/05/02
+# Juego_de_Peleas - Actualizacion: jav2074 - 2020/05/02
  - ----------------------------------------------------------
  - player1Izq =       Keyboard.A
  - player1Der =       Keyboard.D
