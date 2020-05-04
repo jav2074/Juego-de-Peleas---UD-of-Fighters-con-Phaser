@@ -6,7 +6,6 @@ Además hace falta un game over más sólido
 CODIGO ORIGINAL - https://github.com/macaguegi/Juego-de-Peleas---UD-of-Fighters-con-Phaser
 Phaser - v2.0.3 "Allorallen" - Built: Thu Apr 10 2014 01:53:26
 
-
  - ----------------------------------------------------------
 # Juego_de_Peleas - Actualizacion: Javier Sibona - 2020/05/02
  - ----------------------------------------------------------
