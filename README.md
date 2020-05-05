@@ -39,9 +39,7 @@ git remote add origin https://github.com/jav2074/Juego-de-Peleas---UD-of-Fighter
 git push -u origin master
 
 
+Cambiar tu URL remota de SSH a HTTPS con el comando git remote set-url.
 git remote -v
-git remote rename <old> <new>
-
-git remote rename origin <old> 
-git remote rm <new>
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 
