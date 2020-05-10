@@ -173,7 +173,7 @@ var GameState = {
 		me.textPlayer1 = me.game.add.text(w05-40, 40, "Rayden", { font: "32px ARIAL", fill: "#ffffff", align: "left" });
 		me.textPlayer1.anchor.setTo(1, 0);
 		// me.textPlayer1.fixedToCamera = true;
-		me.game.add.text(w05-470, 110, "Energy", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(0, 1);
+		me.game.add.text(w05-470, 110, "Live", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(0, 1);
 		me.textBarraXplayer1 = me.game.add.text(w05-40, 110, "barraXplayer1 ", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
 		me.textBarraXplayer1.text = barraXplayer1 + '%';
 		me.textBarraXplayer1.anchor.setTo(1, 1);
@@ -182,7 +182,7 @@ var GameState = {
 		me.myHealthBarYPlayer1 = new HealthBar(me.game,
 			{ width: 450, height: 40, x: w05-30, y: 130, bg: { color: '#101010' }, bar: { color: '#84A5E7' }, flipped: true });
 		//Etiquetas
-		me.game.add.text(w05-470, 160, "Live", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(0, 1);
+		me.game.add.text(w05-470, 160, "Energy", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(0, 1);
 		me.textBarraYplayer1 = me.game.add.text(w05-40, 160, "barraYplayer1", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
 		me.textBarraYplayer1.text = barraYplayer1 + '%';
 		me.textBarraYplayer1.anchor.setTo(1, 1);
@@ -194,7 +194,7 @@ var GameState = {
 		me.textPlayer2 = me.game.add.text(w05+40, 40, "Sonya", { font: "32px ARIAL", fill: "#ffffff", align: "left" });
 		me.textPlayer2.anchor.setTo(0, 0);
 		// me.textPlayer2.fixedToCamera = true;
-		me.game.add.text(w05+470, 110, "Energy", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(1, 1);
+		me.game.add.text(w05+470, 110, "Live", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(1, 1);
 		me.textBarraXplayer2 = me.game.add.text(w05+40, 110, "barraXplayer2", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
 		me.textBarraXplayer2.text = barraXplayer2 + '%';
 		me.textBarraXplayer2.anchor.setTo(0, 1);
@@ -203,7 +203,7 @@ var GameState = {
 		me.myHealthBarYPlayer2 = new HealthBar(me.game,
 			{ width: 450, height: 40, x: w05+30, y: 130, bg: { color: '#101010' }, bar: { color: '#C8C864' }, flipped: false });
 		//Etiquetas
-		me.game.add.text(w05+470, 160, "Live", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(1, 1);
+		me.game.add.text(w05+470, 160, "Energy", { font: "16px ARIAL", fill: "#ffffff", align: "left" }).anchor.setTo(1, 1);
 		me.textBarraYplayer2 = me.game.add.text(w05+40, 160, "barraYplayer2", { font: "16px ARIAL", fill: "#ffffff", align: "left" });
 		me.textBarraYplayer2.text = barraYplayer2 + '%';
 		me.textBarraYplayer2.anchor.setTo(0, 1);
